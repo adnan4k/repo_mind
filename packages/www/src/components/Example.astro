@@ -1,0 +1,53 @@
+<section class="section">
+  <div class="container">
+    <span class="section-label">Example output</span>
+    <h2 class="section-title">Every rule backed by evidence</h2>
+    <p class="section-body">
+      This is what a mined rule looks like. No vibes, no generic advice —
+      just what your team actually enforces, with clickable receipts.
+    </p>
+
+    <div class="example-card">
+      <div class="example-card-header">
+        <span class="example-dot green"></span>
+        <span class="example-dot amber"></span>
+        <span>Rule #7 · Architecture · 92% confidence</span>
+      </div>
+      <div class="example-card-body">
+        <h3 class="example-rule-name">
+          Use events for cross-domain communication
+        </h3>
+        <p class="example-rule-desc">
+          When one bounded context needs to react to something in another,
+          emit a domain event rather than calling the other context's
+          service directly. This keeps domains decoupled and allows new
+          consumers to be added without modifying the producer.
+        </p>
+
+        <div class="example-evidence">
+          <div class="example-stat">
+            🔗 <strong>17</strong> occurrences
+          </div>
+          <div class="example-stat">
+            👤 <strong>4</strong> reviewers
+          </div>
+          <div class="example-stat">
+            📅 Last seen <strong>3 weeks ago</strong>
+          </div>
+          <div class="example-stat">
+            ✅ <strong>Approved</strong> by tech lead
+          </div>
+        </div>
+
+        <div class="example-code">
+          <pre><span class="key">Rule:</span> <span class="val">Use events for cross-domain communication</span>
+<span class="key">Category:</span> Architecture
+<span class="key">Evidence:</span> <span class="val">flagged 17 times</span> by <span class="val">4 reviewers</span> over <span class="val">2 years</span>
+<span class="key">Last seen:</span> <span class="val">3 weeks ago</span>
+<span class="key">Examples:</span> <span class="val">6 linked PR threads</span>
+<span class="key">Status:</span> <span class="str">approved by team lead</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

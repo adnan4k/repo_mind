@@ -16,6 +16,7 @@
     "typecheck": "tsc -b packages/core packages/cli --dry"
   },
   "devDependencies": {
+    "@types/node": "^25.9.3",
     "typescript": "^5.7.0"
   }
 }

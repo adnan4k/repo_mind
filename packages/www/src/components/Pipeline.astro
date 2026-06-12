@@ -1,0 +1,73 @@
+<section class="section">
+  <div class="container">
+    <span class="section-label">How it works</span>
+    <h2 class="section-title">From PR history to trusted rules — with receipts</h2>
+    <p class="section-body">
+      RepoMind doesn't just ask an LLM to "write engineering guidelines."
+      It mines your actual review history, clusters patterns, scores
+      specificity, and demands human approval before anything ships.
+    </p>
+
+    <div class="pipeline-steps">
+      <div class="pipeline-step">
+        <div class="pipeline-number">1</div>
+        <div>
+          <h3>Ingest</h3>
+          <p>
+            Fetch PRs, review threads, comments, and diff hunks via the
+            GitHub GraphQL API. Every thread carries resolution status —
+            was the feedback accepted or pushed back on?
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">2</div>
+        <div>
+          <h3>Extract</h3>
+          <p>
+            LLM reads each review thread and identifies candidate lessons.
+            Filters out one-off nitpicks, bot comments, and obvious
+            best-practices any LLM already knows.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">3</div>
+        <div>
+          <h3>Cluster</h3>
+          <p>
+            "Use eager loading." "Avoid N+1." "Missing with()." → one rule,
+            63 occurrences, 5 reviewers. Embeddings group similar feedback
+            across years of PRs.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">4</div>
+        <div>
+          <h3>Score</h3>
+          <p>
+            Each candidate is scored on specificity (team-specific vs.
+            generic), consensus (multi-reviewer, low contradiction), and
+            recency. "92% confidence" has a defined meaning — not a vibe.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-number">5</div>
+        <div>
+          <h3>Approve &amp; Export</h3>
+          <p>
+            A human reviews before anything ships. Approved rules render into
+            CLAUDE.md, .cursor/rules, copilot-instructions, and more — kept
+            in sync as the knowledge base evolves.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

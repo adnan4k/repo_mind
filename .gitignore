@@ -3,6 +3,9 @@ dist/
 *.tsbuildinfo
 .env
 .env.*
+!.env.example
+.repomind-cache/
+repomind-report.md
 *.sqlite
 *.db
 .DS_Store

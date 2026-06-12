@@ -49,3 +49,16 @@ The killer risk: extracted rules are 90% generic advice LLMs already know. Phase
 measures the team-specific ratio on real OSS repos; product work only starts if the
 ratio justifies it. Specificity labels (`generic|conventional|team_specific`) are kept
 on every candidate — never dropped — so the denominator is measurable.
+
+## 2026-06-12 — MVP simplifications (each reversible)
+JSON file cache (`.repomind-cache/`) instead of SQLite/Drizzle — a DB earns its place
+with the approval workflow. Per-category LLM merge pass instead of embeddings clustering —
+simpler and adequate at MVP scale (hundreds of candidates). Single markdown report
+instead of the four exporters — the report *is* the Phase 0 deliverable. Confidence is a
+simple occurrences+reviewers heuristic, clearly marked MVP.
+
+## 2026-06-12 — DeepSeek as default dev/test provider
+BYOK design unchanged; DeepSeek (`deepseek-chat`) is the default when no provider is
+configured — near-zero cost for iterating on prompts during Phase 0. Production users
+still choose their own provider; the Phase 0 benchmark should also compare a frontier
+model on the same sample (specificity judging is quality-sensitive).
