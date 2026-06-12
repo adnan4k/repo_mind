@@ -1,0 +1,17 @@
+{
+  "name": "repomind",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "repomind": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "node --experimental-strip-types src/index.ts"
+  },
+  "dependencies": {
+    "@repomind/core": "*",
+    "commander": "^13.0.0"
+  }
+}

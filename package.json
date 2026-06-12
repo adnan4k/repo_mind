@@ -1,0 +1,21 @@
+{
+  "name": "repomind",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Turn years of pull request feedback into AI-ready team knowledge — with receipts.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b packages/core packages/cli",
+    "clean": "tsc -b packages/core packages/cli --clean",
+    "typecheck": "tsc -b packages/core packages/cli --dry"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
