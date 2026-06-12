@@ -50,6 +50,18 @@ runs. The CLI today and SaaS workers later call the same functions.
 - **Git-native knowledge base.** Approved rules live as files under `.repomind/` in the
   *target* repo; the approval workflow is a pull request, not a dashboard.
 
+## Project tracking & docs (keep these current)
+
+- **`PROGRESS.md`** — the single source of truth for project status. After completing a
+  unit of work: tick the item, add a dated Log line, and update "Current focus". If you
+  start work that isn't listed, add it first.
+- **`docs/DECISIONS.md`** — append-only decision log. When a significant choice is made
+  or reversed in a session, append an entry with the reasoning.
+- **Skills** (auto-load by topic — read before touching their area):
+  - `extraction-prompts` — any pipeline prompt, few-shot example, or LLM output schema
+  - `llm-providers` — provider adapters, capability map, key handling, LLM-call code
+  - `exporters` — export formats, templates, managed-section markers
+
 ## Commands
 
 ```
