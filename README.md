@@ -86,15 +86,6 @@ Review the generated `SKILL.md` before committing it — **that file review is y
 
 ---
 
-## Roadmap
-
-* **Phase 0 — Validate (now).** A CLI that ingests one repo's review history and emits candidate rules with evidence. The number that matters: **what fraction of rules are team-specific, correct, and current?**
-* **Phase 1 — Product.** GitHub App, continuous ingestion, approve/curate workflow, exporters.
-* **Phase 2 — Living knowledge.** Drift detection, new-rule alerts, handbook and onboarding generation.
-* **Phase 3 — Beyond PRs.** ADRs, incident reports, postmortems, docs — the full repository brain.
-
----
-
 ## Data & Privacy
 
 Read-only GitHub scopes, BYOK keys that never leave the user's machine, per-repo isolation, and a self-hosted option on the roadmap.
